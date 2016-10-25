@@ -15,8 +15,6 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 public class HDFSClient {
 
 	private static Configuration config = null;
-
-	// private static Configuration config=new Configuration();
 	static {
 		config = HBaseConfiguration.create(); // 配置
 		// config.set("fs.defaultFS", "hdfs://mycluster");
@@ -39,7 +37,7 @@ public class HDFSClient {
 		// FileSystem fs = FileSystem.get(new URI("hdfs://10.133.250.70:9000"),
 		// config, "root");
 
-		Path dst = new Path("/ls/lsTest123.txt");
+		Path dst = new Path("/ls/lsTestasd.txt");
 		Path src = new Path("c:/test.txt"); // c:\\test.txt也可以
 		// Thread.sleep(500000);
 
